@@ -174,7 +174,7 @@ $('document').ready(function(){
 
 		function msgLoop(i) {
     $("p:nth-child(" + i + ")").fadeIn('slow').delay(4000).promise().done(function () {
-        $("p:nth-child(" + i + ")").fadeOut('fast', function() { // Fade out the current message *before* showing the next
+        $("p:nth-child(" + i + ")").fadeOut('fast', function() { 
             i = i + 1;
             if (i <= 50) {
                 msgLoop(i); // Call msgLoop to display the next message
